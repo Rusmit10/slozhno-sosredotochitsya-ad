@@ -1,0 +1,105 @@
+
+:root.theme-dark {
+  --h1-text-color: #db00ff;
+  --accent-color: #ff0070;
+  --accent-color-opacity: #ff007040;
+  --text-color: #f0f0f0;
+  --text-color-opacity: #f0f0f040;
+  --text-accent-color: #f0f0f0;
+}
+
+.theme-dark .header {
+  --bg-image: url(../images/cover-image-dark.png);
+
+  background-image: var(--bg-image, url(../images/cover-image.png));
+}
+
+.theme-dark .header__theme-menu-button {
+  color: var(--text-color, #f0f0f0);
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  outline: 1px solid var(--text-color-opacity, #f0f0f040);
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--text-color, #f0f0f0);
+}
+
+.theme-dark .header__theme-menu-button_active {
+  border: 1px solid var(--text-color, #f0f0f0);
+}
+
+.theme-dark .section__title {
+  color: var(--text-color, #f0f0f0);
+}
+
+.theme-dark .page__title::before {
+  border-top: 1px solid var(--text-color, #f0f0f0);
+  border-right: 1px solid var(--text-color, #f0f0f0);
+}
+
+.theme-dark .page__title::after {
+  border-bottom: 1px solid var(--text-color, #f0f0f0);
+  border-left: 1px solid var(--text-color, #f0f0f0);
+}
+
+@media (width < 1024px) {
+  .theme-dark .footer__title {
+    text-shadow: 2px 2px var(--accent-color, #ff0070);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --h1-text-color: #db00ff;
+    --accent-color: #ff0070;
+    --accent-color-opacity: #ff007040;
+    --text-color: #f0f0f0;
+    --text-color-opacity: #f0f0f040;
+    --text-accent-color: #f0f0f0;
+  }
+
+  .header {
+    --bg-image: url(../images/cover-image-dark.png);
+
+    background-image: var(--bg-image, url(../images/cover-image.png));
+  }
+
+
+  .header__theme-menu-button {
+    color: var(--text-color, #f0f0f0);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--text-color-opacity, #f0f0f040);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color, #f0f0f0);
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--text-color, #f0f0f0);
+  }
+
+  .section__title {
+    color: var(--text-color, #f0f0f0);
+  }
+
+  .page__title::before {
+    border-top: 1px solid var(--text-color, #f0f0f0);
+    border-right: 1px solid var(--text-color, #f0f0f0);
+  }
+
+  .page__title::after {
+    border-bottom: 1px solid var(--text-color, #f0f0f0);
+    border-left: 1px solid var(--text-color, #f0f0f0);
+  }
+
+  @media (width < 1024px) {
+    .footer__title {
+      text-shadow: 2px 2px var(--accent-color, #ff0070);
+    }
+  }
+}
